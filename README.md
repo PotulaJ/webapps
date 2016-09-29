@@ -1,4 +1,5 @@
 # webapps
+This is a standalone application developed with minimal dependencies. Only Java JDK installation is required. 
 
 Steps to deploy the application
 
@@ -39,7 +40,7 @@ Optional Feature Set
 
 The controller should dispense combinations of cash that leave options open. For example, if it could serve up either 5 $20 notes or 2 $50 notes to satisfy a request for $100, but it only has 5 $20 notes left, it should serve the 2 $50 notes. 
 The controller needs to be able to inform other interested objects of activity. Threshold notification in particular is desirable, so that the ATM can be re-supplied before it runs out of cash. (partially completed)
-Persistence of the controller is optional at this time. It can be kept in memory. However, it should go through a distinct initialisation period where it is told the current available amounts prior to being used.(partially completed) CSV has the transaction details
+Persistence of the controller is optional at this time. It can be kept in memory. However, it should go through a distinct initialisation period where it is told the current available amounts prior to being used.(partially completed) CSV has the transaction log details
 
 Application displays the Threshold notification and all combinations of cash outcome at each stage but for initialization of amounts need to manually enter the amount and denominations in CSV file at this stage.
 
